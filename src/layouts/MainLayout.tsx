@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const MainLayout = () => {
     return (
-        <div className="grid grid-cols-12">
+        <div className="font-onest grid grid-cols-12 gap-3 p-4">
             <div className="col-span-3">
                 <Sidebar />
             </div>
