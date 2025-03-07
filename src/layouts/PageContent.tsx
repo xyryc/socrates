@@ -1,11 +1,16 @@
 import { Info } from "lucide-react";
+import BackgroundPattern from "/hero_pattern.png"
 
 const PageContent = () => {
   return (
-    <div className="text-center">
+    <div className="text-center relative bg-[#2B2B2B] rounded-2xl">
+      <img
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src={BackgroundPattern}
+        alt="background pattern"
+      />
 
-
-      <div className="border border-black flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         {/* info */}
         <div className="flex items-center gap-3 mt-10">
           <Info className="text-[#FB9937]" />
