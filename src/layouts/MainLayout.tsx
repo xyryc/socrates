@@ -3,12 +3,12 @@ import Sidebar from "./Sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="font-onest grid grid-cols-12 gap-3 p-4">
-      <div className="col-span-3">
+    <div className="font-onest flex gap-3 p-4">
+      <div className="hidden lg:block">
         <Sidebar />
       </div>
 
-      <div className="col-span-9">
+      <div className="w-full">
         <PageContent />
       </div>
     </div>
