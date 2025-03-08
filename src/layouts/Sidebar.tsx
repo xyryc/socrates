@@ -9,7 +9,8 @@ import {
 import SocratesLogo from "/socratesLogo.png";
 import FlowIcon from "/flowIcon.png";
 import Avatar from "/avatar.png";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
+
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
