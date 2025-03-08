@@ -69,8 +69,8 @@ const PageContent = () => {
           <div
             className="max-w-[820px] px-4 py-4 2xl:py-[20px]"
             style={{
-              "@media (min-width: 1920px)": {
-                padding: "60px", 
+              "@media (minWidth: 1920px)": {
+                padding: "60px",
               },
             }}
           >
@@ -124,8 +124,8 @@ const PageContent = () => {
             </div>
 
             {/* uploads */}
-            <div className="mt-2 2xl:mt-5 p-4 bg-[#242424] rounded-full flex items-center gap-2">
-              <div className="text-sm flex justify-between items-center gap-3.5 w-fit p-3 py-1.5 bg-[#2B2B2B] rounded-full">
+            <div className="mt-2 2xl:mt-5 p-4 bg-[#242424] rounded-[34px] flex flex-col sm:flex-row items-center gap-2">
+              <div className="text-sm flex justify-between items-center gap-3.5 w-fit p-3 py-1.5 bg-[#2B2B2B] rounded-[20px]">
                 <div className="flex items-center gap-2">
                   <img src={PdfIcon} alt="pdf Icon" />
                   <span>Report_file.pdf</span>
@@ -140,10 +140,10 @@ const PageContent = () => {
                 <X size={14} />
               </div>
 
-              <div className="text-sm flex justify-between items-center gap-3.5 w-fit p-3 py-1.5 bg-[#2B2B2B] rounded-full">
+              <div className="text-sm flex justify-between items-center gap-3.5 w-fit p-3 py-1.5 bg-[#2B2B2B] rounded-[20px]">
                 <div className="flex items-center gap-2">
-                  <img src={PdfIcon} alt="pdf Icon" />
-                  <span>Report_file.pdf</span>
+                  <img src={DocIcon} alt="pdf Icon" />
+                  <span>Article.docs</span>
                 </div>
 
                 <div className="text-[#B&B7B7] flex items-center gap-2">
