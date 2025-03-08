@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={` h-[95vh] p-3 flex flex-col justify-between transition-all duration-300 ${
+      className={`h-[94vh] p-3 flex flex-col justify-between transition-all duration-300 overflow-hidden ${
         isCollapsed ? "w-[5vw]" : "w-[20vw]"
       }`}
     >

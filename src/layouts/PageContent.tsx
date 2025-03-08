@@ -16,7 +16,7 @@ import {
 
 const PageContent = () => {
   return (
-    <div className="text-center relative bg-[#2B2B2B] rounded-2xl z-10"> 
+    <div className="text-center relative bg-[#2B2B2B] rounded-2xl z-10 xl:h-[94vh]">
       <img
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         src={BackgroundPattern}
@@ -25,9 +25,9 @@ const PageContent = () => {
 
       <div className="flex flex-col items-center justify-center h-full px-4">
         {/* info */}
-        <div className="flex items-center gap-3 mt-10 bg-[#242424] pl-4 pr-3 py-2 rounded-full">
+        <div className="flex items-center gap-3 mt-4 2xl:mt-10 bg-[#242424] pl-4 pr-3 py-2 rounded-full">
           <Info className="text-[#FB9937]" />
-          <p className="text-sm">
+          <p className="text-xs 2xl:text-sm">
             The web version does not display local chats. To access all
             features, please
             <span className="text-[#FB9937] font-semibold">
@@ -38,38 +38,38 @@ const PageContent = () => {
         </div>
 
         {/* main content */}
-        <div className="my-20">
+        <div className="my-8 3xl:my-20">
           {/* add files */}
           <div className="px-4">
-            <p className="text-[54px] font-medium mb-6">
+            <p className="text-5xl 2xl:text-[54px] font-medium mb-6">
               Add Files to Cloud Chat
             </p>
-            <p className="text-sm">
+            <p className="text-xs 2xl:text-sm">
               Your files will not be stored on our servers and no AI models will
               be trained.
             </p>
-            <p className="text-sm font-semibold text-[#F37F0C]">
+            <p className="text-xs 2xl:text-sm font-semibold text-[#F37F0C]">
               Supported File Types: .docx, .pdf, .epub, and many text filetypes
             </p>
           </div>
 
           {/* cards */}
-          <div className="max-w-[820px] px-4 py-[60px] grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
+          <div className="max-w-[820px] px-4 py-4 2xl:py-[60px] grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
             {/* drag and drop card */}
-            <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
+            <div className="px-6 py-4 2xl:py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
               <img src={DragNDropIcon} alt="drag and drop icon" />
 
-              <p className="text-lg font-semibold">
+              <p className="2xl:text-lg font-semibold">
                 Drag & drop local files here, or click to select
               </p>
             </div>
 
             {/* add url card */}
-            <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
+            <div className="px-6 py-4 2xl:py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
               <img src={UrlIcon} alt="drag and drop icon" />
 
               <div>
-                <p className="text-lg font-semibold mb-2">
+                <p className="2xl:text-lg font-semibold mb-2">
                   Enter in a public URL:
                 </p>
                 <div className="relative w-full max-w-md">
@@ -85,19 +85,19 @@ const PageContent = () => {
             </div>
 
             {/* dropbox card */}
-            <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
+            <div className="px-6 py-4 2xl:py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
               <img src={DropBoxIcon} alt="drag and drop icon" />
 
-              <p className="text-lg font-semibold">
+              <p className="2xl:text-lg font-semibold">
                 Drag & drop local files here, or click to select
               </p>
             </div>
 
             {/* google drive card */}
-            <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
+            <div className="px-6 py-4 2xl:py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
               <img src={DriveIcon} alt="drag and drop icon" />
 
-              <p className="text-lg font-semibold">
+              <p className="2xl:text-lg font-semibold">
                 Drag & drop local files here, or click to select
               </p>
             </div>
@@ -107,11 +107,11 @@ const PageContent = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-2">
             {/* buttons */}
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 font-semibold">
-              <button className="cursor-pointer hover:bg-[#FFBF00] border border-[#FB9937] text-white px-24 py-[19px] rounded-full">
+              <button className="cursor-pointer hover:bg-[#FFBF00] border border-[#FB9937] text-white px-24 py-3 2xl:py-[19px] rounded-full">
                 Start
               </button>
               <span>or</span>
-              <button className="cursor-pointer py-[19px] px-[22px] flex items-center gap-2.5 bg-gradient-to-b from-[#FFBF00] to-[#FB9937] rounded-full">
+              <button className="cursor-pointer py-3 2xl:py-[19px] px-[22px] flex items-center gap-2.5 bg-gradient-to-b from-[#FFBF00] to-[#FB9937] rounded-full">
                 <Sparkles size={16} />
                 Start with Deep Dive
               </button>

@@ -8,7 +8,7 @@ const MainLayout = () => {
         <Sidebar />
       </div>
 
-      <div className="w-full">
+      <div className="w-full rounded-2xl">
         <PageContent />
       </div>
     </div>
