@@ -127,3 +127,15 @@
 }
 
 
+/* Default styles */
+.page-content {
+  max-width: 820px;
+  padding: 16px;
+}
+
+@media (min-width: 1920px) {
+  .page-content {
+    padding: 60px;
+  }
+}
+
