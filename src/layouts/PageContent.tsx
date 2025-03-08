@@ -120,7 +120,7 @@ const PageContent = () => {
             {/* tooltip */}
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger asChild>
+                <TooltipTrigger asChild className="cursor-pointer">
                   <img src={ToolTipIcon} alt="Tool Tip Icon" />
                 </TooltipTrigger>
                 <TooltipContent
