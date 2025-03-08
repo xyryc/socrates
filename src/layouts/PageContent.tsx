@@ -66,14 +66,7 @@ const PageContent = () => {
           </div>
 
           {/* cards */}
-          <div
-            className="max-w-[820px] px-4 py-4 2xl:py-[20px]"
-            style={{
-              "@media (minWidth: 1920px)": {
-                padding: "60px",
-              },
-            }}
-          >
+          <div className="max-w-[820px] px-4 py-4 2xl:py-20">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
               {/* drag and drop card */}
               <div className="px-6 py-2.5 2xl:py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
