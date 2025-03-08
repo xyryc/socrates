@@ -1,11 +1,18 @@
-import { Info } from "lucide-react";
+import { Info, Sparkles } from "lucide-react";
 import BackgroundPattern from "/hero_pattern.png"
 import DragNDropIcon from "/dragndrop.png"
 import UrlIcon from "/url.png"
 import DropBoxIcon from "/dropbox.png"
+import ToolTipIcon from "/Tooltip.png"
 import DriveIcon from "/drive.png"
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../components/ui/tooltip"
 
 const PageContent = () => {
   return (
@@ -63,7 +70,6 @@ const PageContent = () => {
               </div>
             </div>
 
-
             {/* dropbox card */}
             <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
               <img src={DropBoxIcon} alt="drag and drop icon" />
@@ -81,8 +87,29 @@ const PageContent = () => {
 
 
 
-          {/* buttons */}
+          {/* bottom */}
+          <div className="flex items-center justify-center gap-2">
+            {/* buttons */}
+            <div className="flex justify-center items-center gap-4 font-semibold">
+              <button className="cursor-pointer hover:bg-[#FFBF00] border border-[#FB9937] text-white px-24 py-[19px] rounded-full">Start</button>
+              <span>or</span>
+              <button className="cursor-pointer py-[19px] px-[22px] flex items-center gap-2.5 bg-gradient-to-b from-[#FFBF00] to-[#FB9937] rounded-full"><Sparkles size={16} />Start with Deep Dive</button>
+            </div>
 
+            {/* tooltip */}
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <img src={ToolTipIcon} alt="Tool Tip Icon" />
+                </TooltipTrigger>
+                <TooltipContent align="start" side="right" className="bg-[#1E1E1E] text-xs text-white max-w-52 rounded-[20px] p-3">
+                  <p>Deep Dive processes documents section by section for "unlimited" context,
+                    enabling complete answers. Run once per chat to unlock
+                    Table AI and Prompt Loops</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
         </div>
       </div>
 
