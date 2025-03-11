@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  Plus,
-  Settings,
-  PanelRightClose,
-  Search,
-  PanelLeftClose,
-} from "lucide-react";
+import { Plus, Settings, PanelRightClose, Search } from "lucide-react";
 import SocratesLogo from "/socratesLogo.png";
 import FlowIcon from "/flowIcon.png";
 import Avatar from "/avatar.png";
@@ -24,15 +18,15 @@ const Sidebar = () => {
       <div>
         {/* logo brand name */}
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img
               src={SocratesLogo}
               alt="Socrates logo"
-              className={`transition-all duration-300 ${
+              className={`w-[30px] h-[28px] transition-all duration-300 ${
                 isCollapsed ? "hidden" : "block"
               }`}
             />
-            {!isCollapsed && <p className="text-[18px]">socrates</p>}
+            {!isCollapsed && <p className="text-2xl">socrates</p>}
           </div>
 
           <div className="text-[#868686] flex items-center gap-2">
@@ -46,7 +40,11 @@ const Sidebar = () => {
               {isCollapsed ? (
                 <PanelRightClose className="size-6" />
               ) : (
-                <PanelLeftClose className="size-6" />
+                <img
+                  className="size-6"
+                  src="/sidebarleft.png"
+                  alt="sidebar left"
+                />
               )}
             </Button>
           </div>

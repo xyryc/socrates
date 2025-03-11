@@ -47,7 +47,7 @@ const PageContent = () => {
           <div className="px-4 mb-[60px]">
             <p className="text-[54px] font-medium mb-6 flex justify-center">
               Add Files to{" "}
-              <span className="hidden w-fit h-fit md:block mx-4 text-sm p-[14px] bg-[#1E1E1E] rounded-2xl -rotate-8 -mt-1">
+              <span className="border border-[#373737] hidden w-fit h-fit md:block mx-4 text-sm p-[14px] bg-[#1E1E1E] rounded-2xl -rotate-8 -mt-1">
                 <img
                   className="size-11 object-scale-down"
                   src={CloudIcon}
@@ -56,6 +56,7 @@ const PageContent = () => {
               </span>{" "}
               Cloud Chat
             </p>
+
             <p className="text-sm text-[#B7B7B7]">
               Your files will not be stored on our servers and no AI models will
               be trained.
@@ -85,7 +86,7 @@ const PageContent = () => {
               {/* add url card */}
               <div className="px-6 py-[27px] flex items-center gap-1.5 bg-[#242424] rounded-[20px]">
                 <img
-                  className="size-[66px]"
+                  className="size-[54px]"
                   src={UrlIcon}
                   alt="drag and drop icon"
                 />
