@@ -4,11 +4,13 @@ import Sidebar from "./Sidebar";
 const MainLayout = () => {
   return (
     <div className="font-onest flex gap-3 p-4">
-      <div className="hidden lg:block">
+      {/* Sidebar */}
+      <div className="hidden lg:block fixed">
         <Sidebar />
       </div>
 
-      <div className="w-full rounded-2xl">
+      {/* Page Content */}
+      <div className="w-full lg:pl-72 rounded-2xl">
         <PageContent />
       </div>
     </div>
